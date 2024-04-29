@@ -1,0 +1,1047 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+body{
+    background-color: #fcf6f5ff;
+   
+}
+
+/* HEADER PAGE ENDS */
+
+header{
+    width: 100%;
+    height:8rem;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 1rem 9%;
+    box-shadow: .5rem 0 2rem;
+    z-index: 100;
+
+}
+header .logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.logo h3{
+    font-size: 2rem;
+    color: #eee;
+}
+.logo img{
+    height: 100%;
+}
+.nav-bar{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+    /* pointer-events: none; */
+}
+.nav-bar li a{
+    padding: 1rem 1rem;
+    margin: 2rem .5rem;
+    font-size: 1.5rem;
+    color:white;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+.nav-bar li a i{
+    margin-right: 1rem;
+}
+.nav-bar li a.active,
+.nav-bar li a:hover{
+    background-color:rgba(206, 199, 199, 0.705);
+    color: #eee;
+}
+
+.menu{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+}
+
+.menu span{
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    margin:5px 0;
+}
+
+
+/* dropdown start*/
+
+header .nav-bar li ul{
+    display: none;
+    padding: 2rem;
+    background-color: #eee;
+    position: absolute;
+    width: 200px;
+    top: 70%;
+    border-radius: 5px;
+}
+header .nav-bar li:hover > ul{
+    display: block;
+}
+
+header .nav-bar li ul li{
+    width: 100%;
+    padding: 1rem 0;
+}
+header .nav-bar li ul li a{
+    color: #111;
+}
+
+
+
+/* .solutions-menu{
+    display: block;
+    position: absolute;
+    top: 8rem;
+    right: 21%;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-100%);
+    transition: all .6s ease-in-out;
+} */
+
+/* .display{
+    transform: translateY(0%);
+}
+.solutions-menu li{
+    margin:1rem 0;
+    text-align: center;
+    padding: .5rem 0;
+    background-color: #666;
+    border-radius: 5px;
+}
+.solutions-menu li a{
+    font-size: 1.5rem;
+    padding:0 1rem;
+    color: #eee;
+   
+} */
+
+/* dropdown end */
+
+/* HEADER PAGE ENDS */
+
+/* -------------------------------------------------------***********----------------------------------------------------- */
+
+/* HOME PAGE STARTS */
+
+
+#home{
+    padding:0 9%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/home\ page\ photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.com-name{
+    transform: translateX(0%);
+    transition: all .6s ease-in-out;
+    margin-top: 15rem;
+}
+.com-name h1{
+    font-size: 10rem;
+    letter-spacing:.1em;
+
+}
+.com-name h1 span{
+    color: orange;
+}
+.com-name p{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+/* HOEM PAGE ENDS */
+
+/* -----------------------------------------------------*************------------------------------------------------------------- */
+
+/* WELCOME PAGE STARTS */
+
+.welcome{
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 100%;
+    padding:1rem 9%;
+}
+
+.welcome h1{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.welcome h1 span{
+    color: orange;
+}
+.welcome .welcome-details{
+    width: 100%;
+    display: flex;
+    padding: 3rem 2rem;
+}
+.welcome .welcome-details p{
+    margin: auto 0;
+    font-size: 2rem;
+    padding: 0 40px;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 2em;
+}
+.welcome .welcome-details img{
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px,
+    0px 0px 20px;
+
+}
+
+/* WELCOME PAGE ENDS */
+
+/* SERVICE PAGE STARTS */
+
+    .service{
+        /* background-color: antiquewhite; */
+        width: 100%;
+        height: 100%;
+        padding: 1rem 9%;
+    }
+    .service h1{
+        font-size: 7rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .service h1 span{
+        color: orange;
+    }
+
+    .service .web-service{
+        margin-top: 20px;
+    }
+    .service .web-service .web-details{
+        display: flex;
+    }
+    .service .web-service h3{
+        font-size: 3rem;
+        text-align: start;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .service .web-service h3 span{
+        color: orange;
+    }
+    .service .web-service img{
+        width: 40%;
+        height: 20%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+    }
+    .service .web-service p{
+        font-size: 2rem;
+        text-align: justify;
+        padding: 0 2rem;
+        line-height: 2em;
+        margin: auto 0;
+        font-weight: lighter;
+    }
+    .service .app-service{
+        margin-top: 20px;   
+    }
+
+    .service .app-service .app-details{
+        display: flex;
+    }
+    .service .app-service h3{
+        font-size: 3rem;
+        text-align: start;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .service .app-service h3 span{
+        color: orange;
+    }
+
+    .service .app-service img{
+        width: 40%;
+        height: 20%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+    }
+    .service .app-service p{
+        font-size: 2rem;
+        text-align: justify;
+        padding: 0 2rem;
+        line-height: 2em;
+        margin: auto 0;
+    }
+
+/* SERVICE PAGE ENDS */
+
+/* ABOUT PAGE STARTS*/
+
+    .about{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 9%;
+
+    }
+    .about h1{
+        font-size: 7rem;
+        text-align: center;
+    }
+    .about h1 span{
+        color: orange;
+    }
+    .about .left-side{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .left-side .logo{
+        margin-top: 3rem;
+        width:60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border: 10px solid #666;
+        padding: 2rem 0;
+        border-radius: 4px;
+
+    }
+    .about .left-side .logo h3{
+        font-size: 2rem;
+        color:orange;
+        padding-left: 2rem;
+    }
+    .about .left-side .logo p{
+        align-self: self-end;
+        padding-bottom: 2rem;
+    }
+    .about .left-side .logo img{
+        width: 20%;
+        height: 20%;
+    }
+    .about .content{
+        margin-top: 2rem;
+    }
+    .about .content p{
+        font-size: 2rem;
+        line-height: 2em;
+        text-align: justify;
+    }
+
+
+/* ABOUT PAGE ENDS */
+
+/* PROJECT PAGE STARTS */
+
+    .project{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 9%;
+    }
+    .project h1{
+        font-size: 6rem;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .project h1 span{
+        color: orange;
+    }
+    .project .container{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .project .container .web-project{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color:gray ;
+        border-radius: 5px;
+    }
+    .project .container .web-project h3{
+        font-size: 4rem;
+        text-transform: capitalize;
+        color: white;
+    }
+    .project .container .web-project label{
+        font-size: 4rem;
+        text-transform: capitalize;
+        padding: .5rem;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .project .container .app-project{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color:gray ;
+        border-radius: 5px;
+    }
+    .project .container .app-project h3{
+        font-size: 4rem;
+        text-transform: capitalize;
+        color:white;
+    }
+    .project .container .app-project label{
+        font-size: 4rem;
+        text-transform: capitalize;
+        background-color: lightgray;
+        padding: .5rem;
+        border-radius: 10px;
+    }
+
+/* PROJECT PAGE ENDS */
+
+/* FEEDBACK STARTS*/
+
+    .feedback{
+        padding: 1rem 9%;
+        width: 100%;
+        height: 100%;
+    }
+    .feedback h1{
+        font-size: 7rem;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+    .feedback h1 span{
+        color: orange;
+    }
+    .feedback .container{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: lightgray;
+       
+    }
+    .feedback .container .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        gap: 3rem;
+    }
+    .details .feedback-details{
+        background-color: lightcyan;
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .feedback-details .profile{
+        display: flex;
+        width: 100%;
+        height: 5rem;
+    }
+    .feedback-details .profile img{
+        width: 50px;
+        height: 50px;
+    } 
+    .feedback-details .profile h3{
+        align-self: center;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+    .feedback-details .content p{
+        line-height: 2em;
+        font-size: 1.5rem;
+    }
+    
+/* FEEDBACK ENDS */
+
+/* CONTACT US PAGE STARTS */
+
+    .contact{
+        padding: 1rem 9%;
+        width:100%;
+        height: 100%;
+    }
+    .contact h1{
+        font-size: 7rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .contact h1 span{
+        color: orange;
+    }
+
+    .contact .container{
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+        display: flex;
+        gap :2rem;
+        background-color: lightgrey;
+        margin-top: 2rem;
+    }
+
+    .contact.container.left-side{
+        background-color: burlywood;
+        width: 100%;
+    }
+    .container .left-side p{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .container .left-side img{
+        width: 100%;
+        height: 80%;
+        border-radius: 5px;
+    }
+
+    .container .right-side{
+        width: 100%;
+        height: 100%;
+    }
+    .right-side form{
+        padding: 2rem;
+        background-color: burlywood;
+        font-size: 3rem;
+        border-radius: 5px;
+    }
+    form .name,
+    form .email,
+    form .mobile-number,
+    form .area{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    
+    form input,textarea{
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #666;
+        background-color: transparent;
+        color: #111;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+/* CONTACT US PAGE ENDS */
+
+/* CONTACT AD STARTS */
+
+    .contact-ad{
+        margin: 3rem 0 0 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 9%;
+    }
+    .contact-ad .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+        background-color: #fcf6f5ff;
+        border: 10px solid lightgray;
+        border-radius: 10px;
+    }
+    .contact-ad .container .logo{
+        width: 100px;
+        height: 100px;
+        background-color: #666;
+        border-radius: 50%;
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .logo i{
+        font-size: 5rem;
+        align-items: center;
+        /* position: absolute;
+        top: 2.5rem;
+        left: 2rem; */
+        color: white;
+    }
+    .contact-ad .container .content{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        user-select: none;
+
+    }
+    .content h3{
+        font-size: 5rem;
+        text-transform: capitalize;
+    }
+    .content p{
+        font-size: 2rem;
+    }
+    .content p span{
+        font-size: 2.5rem;
+    }
+    .content p a{
+        color: orange;
+    }
+/* CONTACT ADD ENDS */
+
+/* FOOTER PAGE STARTS */
+
+    footer{
+        margin: 3rem 0 0 0;
+        padding: 1rem 9%;
+        width: 100%;
+        height: 100%;
+        background-color:black;
+        color:#eee;
+    }
+    footer .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container .logo{
+        width: 150px;
+        height: 150px;
+
+    }
+    .container .content{
+        width: 80%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+   
+    .container .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+    .social-media li{
+        display:block;
+    }
+    .container .social-media a{
+        font-size: 1.2rem;
+        line-height: 2em;
+        color: #eee;
+    }
+    .social-media li a i{
+        font-size: 1.5rem;
+        margin-right:1rem;
+    }
+    .social-media li a:hover,
+    .social-media li a:focus{
+        color: blue;
+    }
+    .container .contact a{
+
+        font-size: 2.5rem;
+        line-height: 2em;
+        color: #eee;
+
+    }
+    .contact li a i{
+        margin-right: 1rem;
+       
+    }
+    .contact li a:nth-child(2),
+    .contact li a:nth-child(2){
+        color: blue;
+
+    }
+    footer h1{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+/* FOOTER PAGE ENDS */
+
+
+/* RESPONSIVE FOR 991PX */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 1rem;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .about .left-side .logo{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-bar{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        transition: all .6s ease-in-out;
+    }
+    .nav-bar li{
+        margin: 5vh 0;
+    }
+    .nav-bar li a{
+        margin: 1rem .5rem;
+    }
+    .nav-bar li:hover > ul{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* RESPONSIVE FOR 800PX */
+
+@media(max-width:800px){
+
+    html{
+        font-size: 50%;
+    }
+    header{
+        padding: 1rem 1rem;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-bar{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        transition: all .6s ease-in-out;
+    }
+    .nav-bar li{
+        margin: 5vh 0;
+    }
+    .nav-bar li a{
+        margin: 1rem .5rem;
+    }
+    .container img{
+        object-fit: cover;
+    }
+    .welcome{
+        padding:1rem 1rem;
+    }
+    .welcome h1{
+        font-size: 3rem;
+    }
+    .welcome .welcome-details{
+        padding: 1rem 1rem;
+        flex-direction: column;
+    }
+    .welcome .welcome-details p{
+        font-size: 2rem;
+        margin-top: 20px;
+        padding: 1rem 1rem;
+    }
+
+    .welcome .welcome-details img{
+        width: 95%;
+        height: 20%;
+        margin:20px auto;
+        box-shadow: none;
+    }
+    .service{
+        padding: 1rem 1rem;
+    }
+    .service .web-service img{
+        width: 95%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .service .app-service img{
+        width: 95%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .service .web-service .web-details{
+        flex-direction: column;
+    }
+    .service .app-service .app-details{
+        flex-direction: column;
+    }
+    .service .web-service h3,
+    .service .app-service h3{
+        text-align: center;
+    }
+    .about{
+        padding: 1rem 1rem;
+    }
+    .about .left-side .logo{
+        width: 100%;
+        flex-direction: column;
+    }
+    .about .left-side .logo h3{
+        font-size: 3rem;
+    }
+    .about .left-side .logo p{
+        align-self: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .project{
+        padding: 1rem 1rem;
+    }
+    .project h1{
+        font-size: 3.5rem;
+    }
+    .project .container{
+        flex-direction: column;
+    }
+    .project .container .web-project,
+    .project .container .app-project{
+        padding: 1rem;
+    }
+    .project .container .web-project h3,
+    .project .container .app-project h3{
+        font-size: 3rem;
+        align-self: center;
+    }
+
+    .feedback{
+        padding: 1rem;
+    }
+    .feedback h1{
+        font-size: 4rem;
+    }
+    .feedback .container .details{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .details .feedback-details .profile{
+        margin-bottom: 3rem;
+    }
+    .contact{
+        padding: 1rem;
+    }
+    .contact h1{
+        font-size: 4rem;
+    }
+    .contact .container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .right-side form{
+        font-size: 2.5rem;
+    }
+    .contact-ad{
+        padding: 1rem;
+    }
+    .contact-ad .container{
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .contact-ad .container .logo{
+        align-self: center;
+        margin-bottom: 2rem;
+       
+    }
+    .contact-ad .container .logo i{
+        font-size: 6rem;
+    }
+    .contact-ad .container .content h3{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .contact-ad .container .content p{
+        line-height: 1.5em;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer{
+        padding: 1rem;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .content{
+        font-size: 1rem;
+    }
+    .social-media{
+        margin: 2rem 0;
+    }
+    .container.contact{
+        margin: 2rem 0;
+    }
+    .container .contact li a{
+        font-size: 1.5rem;
+    }
+    footer h1{
+        margin: 1rem 0;
+    }
+}
+
+/* RESPONSIVE FOR 540PX */
+
+@media(max-width:540px){
+
+    html{
+        font-size: 50%;
+    }
+    .nav-bar{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        transition: all .6s ease-in-out;
+       
+    }
+    .nav-bar li{
+        margin: 5vh 0;
+    }
+    .menu{
+        display: block;
+    }
+    .container img{
+        object-fit: cover;
+        
+    }
+    .com-name h1{
+        font-size: 6rem;
+        letter-spacing: normal;
+    }
+    .com-name p{
+        font-size: 1.5rem;
+    }
+    .welcome{
+        padding:1rem 1rem;
+    }
+    .welcome h1{
+        font-size: 3rem;
+    }
+    .welcome .welcome-details{
+        padding: 1rem 1rem;
+        flex-direction: column;
+    }
+    .welcome .welcome-details p{
+        font-size: 2rem;
+        margin-top: 20px;
+        padding: 1rem 1rem;
+    }
+
+    .welcome .welcome-details img{
+        width: 90%;
+        height: 20%;
+        margin: auto;
+        box-shadow: none;
+    }
+    .service{
+        padding: 1rem 1rem;
+    }
+    .service h1{
+        font-size: 6rem;
+    }
+    .service .web-service{
+        flex-direction: column;
+    }
+    .service .app-service{
+        flex-direction: column;
+    }
+
+    .about h1{
+        font-size: 4rem;
+    }
+    
+    .about .left-side .logo{
+        width: 100%;
+        flex-direction: column;
+    }
+    .about .left-side .logo h3{
+        font-size: 2rem;
+    }
+    .about .left-side .logo p{
+        align-self: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+}
+
+/* script class add */
+
+.show{
+        right: 0%;
+}
+
+.show-1{
+    transform: translateX(-200%);
+}
+
+
+
+
+
